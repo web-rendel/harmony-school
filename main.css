@@ -178,13 +178,40 @@ header:after {
 
 
 
-
-
+/*
+    footer
+*/
+footer {
+    background-color: #f3f3f3;
+}
+.footer__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.footer__body-school {
+    font-size: 22px;
+}
+.footer__body-school span {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 26px;
+}
 
 
 /*
     @media
 */
+@media (max-width: 768px) {
+    .footer__body {
+        justify-content: space-around;
+    }
+    .footer__body-address {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
 @media (max-width: 576px) {
     .timetable-classes__day {
         width: 100%;
