@@ -90,6 +90,12 @@ input::-ms-clear, input::-ms-reveal{
     text-align: center;
     margin-bottom: 30px;
 }
+.sub-title {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 .section-indent {
     padding: 50px 0;
 }
@@ -173,8 +179,46 @@ header:after {
 }
 
 
+/*
+    school-news
+*/
+.school-news__item {
+    background: #f8f8f8;
+}
+.school-news__item-image {
+    margin-bottom: 15px;
+}
+.school-news__item-image img {
+    max-width: 100%;
+}
+.school-news__item-title {
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.school-news__item-text {
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
 
 
+
+/*
+    school-photo
+*/
+.school-photo__image {
+    margin-bottom: 15px;
+}
+.school-photo__image img {
+    max-width: 100%;
+}
 
 
 
