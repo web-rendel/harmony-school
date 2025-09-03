@@ -138,6 +138,7 @@ header:after {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
 .timetable-classes__day {
   width: 40%;
