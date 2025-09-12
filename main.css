@@ -81,6 +81,10 @@ input::-ms-reveal {
   display: none;
 }
 
+.img-fluid {
+  max-width: 100%;
+}
+
 .main-stars {
   display: flex;
   justify-content: center;
