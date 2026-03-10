@@ -15,7 +15,7 @@ body {
   line-height: 1.2;
 }
 
-dl > *,
+dl>*,
 address,
 cite {
   font-style: normal;
@@ -60,18 +60,22 @@ h6 {
 p {
   margin: 0;
 }
+
 a {
   background: none;
 }
+
 input::placeholder {
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
 }
+
 input:focus::placeholder {
   opacity: 0;
 }
+
 input::-ms-clear,
 input::-ms-reveal {
   display: none;
@@ -90,18 +94,21 @@ input::-ms-reveal {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .main-title {
   font-family: 'Architects Daughter', cursive;
   font-size: 46px;
   text-align: center;
   margin-bottom: 30px;
 }
+
 .sub-title {
   padding-bottom: 10px;
   text-align: center;
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .section-indent {
   padding: 50px 0;
 }
@@ -118,6 +125,7 @@ header {
   justify-content: center;
   background-repeat: no-repeat;
 }
+
 header h1 {
   color: #fff;
   text-align: center;
@@ -127,6 +135,7 @@ header h1 {
   z-index: 1;
   margin-bottom: 20px;
 }
+
 header h2 {
   color: #fff;
   text-align: center;
@@ -135,6 +144,7 @@ header h2 {
   position: relative;
   z-index: 1;
 }
+
 header:after {
   content: '';
   background-color: rgba(0, 0, 0, 0.5);
@@ -152,17 +162,20 @@ header:after {
 .timetable-classes {
   width: 100%;
 }
+
 .timetable-classes__body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
 }
+
 .timetable-classes__day {
   width: 40%;
   border: 1px solid #e2e2e2;
   margin-bottom: 20px;
 }
+
 .timetable-classes__name {
   padding: 5px 10px;
   background-color: #eee;
@@ -170,16 +183,17 @@ header:after {
   font-size: 22px;
   font-weight: 700;
 }
+
 .timetable-classes__items-item {
   display: flex;
   align-items: center;
   border-top: 1px solid #e2e2e2;
-  height: 40px;
+  min-height: 40px;
   position: relative;
 }
+
 .timetable-classes__items-num {
   flex: 0 0 40px;
-  height: 39px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +202,7 @@ header:after {
   margin-right: 15px;
   background-color: #eee;
 }
+
 .timetable-classes__items-lesson {
   font-size: 16px;
 }
@@ -200,18 +215,52 @@ header:after {
   border-radius: 6px;
 }
 
+/* Smart Timetable Styles */
+.timetable-classes__day.is-current-day {
+  border-color: #28a745;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  z-index: 10;
+  position: relative;
+}
+
+.timetable-classes__day.is-current-day .timetable-classes__name {
+  background-color: #d4edda;
+  color: #155724;
+  border-bottom: 1px solid #c3e6cb;
+}
+
+.timetable-classes__items-item.is-current-lesson {
+  background-color: #e8f5e9;
+}
+
+.timetable-classes__items-item.is-current-lesson .timetable-classes__items-num {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.lesson-timer {
+  font-size: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
 /*
     school-news
 */
 .school-news__item {
   background: #f8f8f8;
 }
+
 .school-news__item-image {
   margin-bottom: 15px;
 }
+
 .school-news__item-image img {
   max-width: 100%;
 }
+
 .school-news__item-title {
   padding: 0 10px;
   text-align: center;
@@ -219,6 +268,7 @@ header:after {
   font-size: 20px;
   font-weight: 700;
 }
+
 .school-news__item-text {
   padding: 0 10px;
   text-align: center;
@@ -235,6 +285,7 @@ header:after {
 .school-photo__image {
   margin-bottom: 15px;
 }
+
 .school-photo__image img {
   max-width: 100%;
 }
@@ -245,6 +296,7 @@ header:after {
 footer {
   background-color: #f3f3f3;
 }
+
 .footer__body {
   display: flex;
   align-items: center;
@@ -252,9 +304,11 @@ footer {
   flex-wrap: wrap;
   padding: 30px 0;
 }
+
 .footer__body-school {
   font-size: 22px;
 }
+
 .footer__body-school span {
   font-family: 'Architects Daughter', cursive;
   font-size: 26px;
@@ -279,27 +333,32 @@ footer {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
       0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
+
   5%,
   95% {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
       0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
+
   10%,
   59% {
     box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
       -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
       -0.297em -0.775em 0 -0.477em;
   }
+
   20% {
     box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
       -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
       -0.749em -0.34em 0 -0.477em;
   }
+
   38% {
     box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
       -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
       -0.82em -0.09em 0 -0.477em;
   }
+
   100% {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
       0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
@@ -310,6 +369,7 @@ footer {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -323,17 +383,20 @@ footer {
     max-width: 100% !important;
   }
 }
+
 @media (max-width: 768px) {
   .footer__body {
     justify-content: space-around;
   }
+
   .footer__body-address {
     margin-top: 20px;
     text-align: center;
   }
+
   .timetable-classes__day {
     width: 100%;
   }
 }
-@media (max-width: 576px) {
-}
+
+@media (max-width: 576px) {}
