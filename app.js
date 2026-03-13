@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         navigator.clipboard
           .writeText(url)
           .then(() => {
-            const originalText = copyLink.textContent;
+            const originalText = copyLink.innerHTML;
             copyLink.textContent = 'Copied!';
             setTimeout(() => {
-              copyLink.textContent = originalText;
+              copyLink.innerHTML = originalText;
             }, 1000);
           })
           .catch((err) => {
@@ -35,19 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
     { num: 7, start: '12:45', end: '13:25' },
     { num: 8, start: '13:35', end: '14:15' },
     { num: 9, start: '14:20', end: '15:00' },
-    { num: 10, start: '15:10', end: '15:50' }
+    { num: 10, start: '15:10', end: '15:50' },
   ];
 
   function updateSmartTimetable() {
     const now = new Date();
     const dayOfWeek = now.getDay(); // 0 is Sunday, 1 is Monday ... 6 is Saturday
 
-    const days = document.querySelectorAll('.timetable-classes__body > .timetable-classes__day');
+    const days = document.querySelectorAll(
+      '.timetable-classes__body > .timetable-classes__day',
+    );
 
     // Process Monday-Friday (indices 0-4 relative to the schedule grid)
     days.forEach((d, index) => {
       // Is today this day block? (index 0 corresponds to Monday (1), etc.)
-      const isTodayBlock = (dayOfWeek >= 1 && dayOfWeek <= 5) && (index === dayOfWeek - 1);
+      const isTodayBlock =
+        dayOfWeek >= 1 && dayOfWeek <= 5 && index === dayOfWeek - 1;
 
       if (isTodayBlock) {
         d.classList.add('is-current-day');
@@ -75,11 +78,17 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
 
-        const lessonItems = d.querySelectorAll('.timetable-classes__items-item');
-        lessonItems.forEach(item => {
+        const lessonItems = d.querySelectorAll(
+          '.timetable-classes__items-item',
+        );
+        lessonItems.forEach((item) => {
           const numDiv = item.querySelector('.timetable-classes__items-num');
 
-          if (currentLessonNum !== null && numDiv && parseInt(numDiv.textContent.trim()) === currentLessonNum) {
+          if (
+            currentLessonNum !== null &&
+            numDiv &&
+            parseInt(numDiv.textContent.trim()) === currentLessonNum
+          ) {
             item.classList.add('is-current-lesson');
 
             const diffSec = Math.floor((msEndLesson - now.getTime()) / 1000);
@@ -94,7 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
               timerDiv.style.display = 'inline-block';
               timerDiv.style.verticalAlign = 'middle';
 
-              const lessonDiv = item.querySelector('.timetable-classes__items-lesson');
+              const lessonDiv = item.querySelector(
+                '.timetable-classes__items-lesson',
+              );
               if (lessonDiv) {
                 lessonDiv.appendChild(timerDiv);
               }
@@ -106,11 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (timerObj) timerObj.remove();
           }
         });
-
       } else {
         d.classList.remove('is-current-day');
-        const lessonItems = d.querySelectorAll('.timetable-classes__items-item');
-        lessonItems.forEach(item => {
+        const lessonItems = d.querySelectorAll(
+          '.timetable-classes__items-item',
+        );
+        lessonItems.forEach((item) => {
           item.classList.remove('is-current-lesson');
           const timerObj = item.querySelector('.lesson-timer');
           if (timerObj) timerObj.remove();

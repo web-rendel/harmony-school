@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony-school</title>
+    <title>Harmony-school | 5-А</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,200&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
         rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <!-- CSS frameworks & icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="main.css">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SCJPM1NB3"></script>
     <script>
@@ -29,309 +35,44 @@
 </head>
 
 <body>
+    <!-- Background Texture -->
+    <div class="blob-bg"></div>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>5-А!</h1>
-                    <!-- <h2>Канікули</h2> -->
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>5-А!</h1>
+            <p>Одеський ліцей «Гармонія»</p>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path
+                    d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,154.7C960,128,1056,128,1152,149.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
         </div>
     </header>
 
+    <!-- Timetable -->
     <section class="timetable-classes section-indent">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
+                        <span><span style="color:#FF0000">★</span><span style="color:#FF8C00">★</span><span
+                                style="color:#FFD700">★</span><span style="color:#008000">★</span><span
+                                style="color:#00FFFF">★</span><span style="color:#0000CD">★</span><span
+                                style="color:#4B0082">★</span></span>
                     </div>
                     <h2 class="main-title">Розклад занять! №-1</h2>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col">
-                    <!-- <div class="timetable-classes__body">
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Понедiлок</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">Математика - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">Укр.мова - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">Укр.мова - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">
-                                        Інформатика, <b>гр.1</b> - каб. 308-А<br>
-                                        Англ.мова, <b>гр.2</b> - каб. 202
-                                    </div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">ДІС</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">---</div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson ">Фізра <span>online -
-                                            (14.20-15.00)</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Вiвторок</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">Зарубіжна літ. - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">Укр.мова - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">
-                                        Англ.мова, <b>гр.1</b> - каб. 202<br>
-                                        Англ.мова, <b>гр.2</b> - каб. 212
-                                    </div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">Математика - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">Укр.літ - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">---</div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">Фізра <span>online -
-                                            (14.20-15.00)</span></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">10</div>
-                                    <div class="timetable-classes__items-lesson">ЗБД <span>online -
-                                            (15.10-15.50)</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Середа</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">Укр.літ - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">Фізра</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">Укр.мова - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">Укр.мова - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">---</div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">10</div>
-                                    <div class="timetable-classes__items-lesson">Технології <span>online -
-                                            (15.10-15.50)</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Четвер</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">
-                                        Англ.мова, <b>гр.1</b> - каб. 202<br>
-                                        Інформатика, <b>гр.2</b> - каб. 308-А
-                                    </div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">Математика - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">Математика - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">
-                                        Англ.мова, <b>гр.1</b> - каб. 202<br>
-                                        Англ.мова, <b>гр.2</b> - каб. 212
-                                    </div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">Пізнаємо природу - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">---</div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">Мистецтво <span>online -
-                                            (14.20-15.00)</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">П'ятниця</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">Математика - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">Зарубіжна літ. - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">Укр.літ - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">Пізнаємо природу - каб. 202</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">Німецька мова</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">---</div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">Етика <span>online -
-                                            (14.20-15.00)</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Розклад дзвiнкiв по 30хв</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">8.00 - 8.30</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">8.35 - 9.05</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">9.10 - 9.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">9.50 - 10.20</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">10.25 - 10.55</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">6</div>
-                                    <div class="timetable-classes__items-lesson">11.00 - 11.30</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">12.50 - 13.20</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">10</div>
-                                    <div class="timetable-classes__items-lesson">13.25 - 13.55</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Розклад дзвiнкiв (Школа)</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">8.00 - 8.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">8.45 - 9.25</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">9.35 - 10.15</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">10.20 - 11.00</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">11.10 - 11.50</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">6</div>
-                                    <div class="timetable-classes__items-lesson">12.00 - 12.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">7</div>
-                                    <div class="timetable-classes__items-lesson">12.45 - 13.25</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">8</div>
-                                    <div class="timetable-classes__items-lesson">13.35 - 14.15</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">14.20 - 15.00</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">10</div>
-                                    <div class="timetable-classes__items-lesson">15.10 - 15.50</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="timetable-classes__body">
+
                         <div class="timetable-classes__day">
                             <div class="timetable-classes__name">Понедiлок</div>
                             <div class="timetable-classes__items">
@@ -433,10 +174,6 @@
                                     <div class="timetable-classes__items-lesson"><b>Укр. мова</b> - каб. 202</div>
                                 </div>
                                 <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num"></div>
-                                    <div class="timetable-classes__items-lesson"></div>
-                                </div>
-                                <div class="timetable-classes__items-item">
                                     <div class="timetable-classes__items-num">---</div>
                                     <div class="timetable-classes__items-lesson"></div>
                                 </div>
@@ -527,142 +264,161 @@
                             </div>
                         </div>
 
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Розклад дзвiнкiв по 30хв</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">8.00 - 8.30</div>
+                        <!-- Info blocks for bells schedule (Not part of Monday-Friday JS loop logic) -->
+                        <div class="timetable-classes__day" style="grid-column: 1 / -1;">
+                            <div class="row">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <div class="timetable-classes__name" style="border-radius: var(--radius-lg) 0 0 0;">
+                                        Розклад дзвiнкiв</div>
+                                    <div class="timetable-classes__items">
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">1</div>
+                                            <div class="timetable-classes__items-lesson">8.00 - 8.40</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">2</div>
+                                            <div class="timetable-classes__items-lesson">8.45 - 9.25</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">3</div>
+                                            <div class="timetable-classes__items-lesson">9.35 - 10.15</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">4</div>
+                                            <div class="timetable-classes__items-lesson">10.20 - 11.00</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">5</div>
+                                            <div class="timetable-classes__items-lesson">11.10 - 11.50</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">6</div>
+                                            <div class="timetable-classes__items-lesson">12.00 - 12.40</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">7</div>
+                                            <div class="timetable-classes__items-lesson">12.45 - 13.25</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">8</div>
+                                            <div class="timetable-classes__items-lesson">13.35 - 14.15</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">9</div>
+                                            <div class="timetable-classes__items-lesson">14.20 - 15.00</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">10</div>
+                                            <div class="timetable-classes__items-lesson">15.10 - 15.50</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">8.35 - 9.05</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">9.10 - 9.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">9.50 - 10.20</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">10.25 - 10.55</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">6</div>
-                                    <div class="timetable-classes__items-lesson">11.00 - 11.30</div>
+                                <div class="col-md-6">
+                                    <div class="timetable-classes__name">
+                                        Розклад дзвiнкiв по 30хв</div>
+                                    <div class="timetable-classes__items">
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">1</div>
+                                            <div class="timetable-classes__items-lesson">8.00 - 8.30</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">2</div>
+                                            <div class="timetable-classes__items-lesson">8.35 - 9.05</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">3</div>
+                                            <div class="timetable-classes__items-lesson">9.10 - 9.40</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">4</div>
+                                            <div class="timetable-classes__items-lesson">9.50 - 10.20</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">5</div>
+                                            <div class="timetable-classes__items-lesson">10.25 - 10.55</div>
+                                        </div>
+                                        <div class="timetable-classes__items-item">
+                                            <div class="timetable-classes__items-num">6</div>
+                                            <div class="timetable-classes__items-lesson">11.00 - 11.30</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="timetable-classes__day">
-                            <div class="timetable-classes__name">Розклад дзвiнкiв (Школа)</div>
-                            <div class="timetable-classes__items">
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">1</div>
-                                    <div class="timetable-classes__items-lesson">8.00 - 8.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">2</div>
-                                    <div class="timetable-classes__items-lesson">8.45 - 9.25</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">3</div>
-                                    <div class="timetable-classes__items-lesson">9.35 - 10.15</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">4</div>
-                                    <div class="timetable-classes__items-lesson">10.20 - 11.00</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">5</div>
-                                    <div class="timetable-classes__items-lesson">11.10 - 11.50</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">6</div>
-                                    <div class="timetable-classes__items-lesson">12.00 - 12.40</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">7</div>
-                                    <div class="timetable-classes__items-lesson">12.45 - 13.25</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">8</div>
-                                    <div class="timetable-classes__items-lesson">13.35 - 14.15</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">9</div>
-                                    <div class="timetable-classes__items-lesson">14.20 - 15.00</div>
-                                </div>
-                                <div class="timetable-classes__items-item">
-                                    <div class="timetable-classes__items-num">10</div>
-                                    <div class="timetable-classes__items-lesson">15.10 - 15.50</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Announcements -->
     <section class="information-about-us section-indent">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
+                        <span><span style="color:#FF0000">★</span><span style="color:#FF8C00">★</span><span
+                                style="color:#FFD700">★</span><span style="color:#008000">★</span><span
+                                style="color:#00FFFF">★</span><span style="color:#0000CD">★</span><span
+                                style="color:#4B0082">★</span></span>
                     </div>
                     <h2 class="main-title">Оголошення</h2>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📢 ОГОЛОШЕННЯ</h4>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Оголошення</h4>
+                                <div class="info-card-subtitle">Шановні батьки</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Шановні батьки, запрошую Вас на
-                                батьківські збори</h6>
-                            <!-- <p class="h5">🗓 25.08.2025</p>
-                            <p class="h5">🕕 18:00</p>
-                            <p class="h5">📍 каб. 202</p> -->
+                        <div class="info-card-body">
+                            <p>Запрошую Вас на батьківські збори</p>
                             <div class="d-flex align-items-center justify-content-center p-4">
                                 <span class="loader"></span>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon blue"><i class="fa-solid fa-circle-info"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Оголошення</h4>
+                                <div class="info-card-subtitle">08/09 Прошу батьків про таке:</div>
+                            </div>
+                        </div>
+                        <div class="info-card-body">
+                            <p><i class="fa-solid fa-check text-success me-2"></i>Довідки про причину пропуску занять
+                                дитини</p>
+                            <hr>
+                            <p><i class="fa-solid fa-check text-success me-2"></i>В особ. повідомлення розклад тренувань
+                                чи курсів, які збігаються з онлайн-уроками</p>
+                            <hr>
+                            <p><i class="fa-solid fa-check text-success me-2"></i>Попередження про причини відсутності
+                                на онлайн-уроках.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📢 ОГОЛОШЕННЯ</h4>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon green"><i class="fa-solid fa-bell"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Оголошення</h4>
+                                <div class="info-card-subtitle">TBD</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-body-secondary">08/09 Прошу батьків про таке:</h6>
-                            <p class="h5">✔️довідки про причину пропуску занять дитини ;</p>
-                            <p class="h5">✔️В особі.повідомлення розклад тренувань чи курсів ,які збігаються з онлайн-
-                                уроками;</p>
-                            <p class="h5">✔️Попередження про причини відсутності на онлайн- уроках.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📢 ОГОЛОШЕННЯ</h4>
-                        </div>
-                        <div class="card-body">
-                            <p class="h5">TBD</p>
+                        <div class="info-card-body">
+                            <p>TBD</p>
                         </div>
                     </div>
                 </div>
@@ -670,109 +426,124 @@
         </div>
     </section>
 
+    <!-- Information -->
     <section class="information-about-us section-indent">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
+                        <span><span style="color:#FF0000">★</span><span style="color:#FF8C00">★</span><span
+                                style="color:#FFD700">★</span><span style="color:#008000">★</span><span
+                                style="color:#00FFFF">★</span><span style="color:#0000CD">★</span><span
+                                style="color:#4B0082">★</span></span>
                     </div>
                     <h2 class="main-title">Інформація</h2>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📰 Інформація</h4>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Інформація</h4>
+                                <div class="info-card-subtitle mb-0">Розклад по тижням на І семестр</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="mb-2 card-subtitle mb-0 text-body-secondary">Розклад по тижням на І семестр</h6>
-                            <img class="img-fluid" src="img/2345.png" alt="">
+                        <div class="info-card-body text-center p-2">
+                            <img class="img-fluid rounded" src="img/2345.png" alt="Розклад по тижням">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📰 Інформація</h4>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header pb-3 mb-3">
+                            <div class="info-card-icon blue"><i class="fa-solid fa-video"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Інформація</h4>
+                                <div class="info-card-subtitle mb-0">Посилання на ZOOM</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-0 text-body-secondary">Посилання на ZOOM</h6>
+                        <div class="zoom-list">
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us04web.zoom.us/j/73046673920?pwd=aRtVPjiNGFSMKiuppJ2TecyIfFdFzk.1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-masks-theater"></i> Мистецтво
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us04web.zoom.us/j/78980744792?pwd=hL7bbdfLMANjAJ1ZYeGCAcqZCbqISh.1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-book"></i> Укр. мова/літ
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us05web.zoom.us/j/82873210170?pwd=cDhiZGdCSzBjSU80aFc0VHpwbU0zZz09"
+                                    target="_blank">
+                                    <i class="fa-solid fa-microchip"></i> Технологія
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us04web.zoom.us/j/79411790504?pwd=1vJkWCKORGIEe5gbMf2aAM5HNOqXr1.1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-heart-pulse"></i> ОЗДК
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us04web.zoom.us/j/74030912126?pwd=n6FXDvLEee3qSZbLsttX1ZAJ4ZZOfA.1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-laptop-code"></i> Інформатика
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="zoom-list-item d-flex align-items-center justify-content-between">
+                                <a href="https://us05web.zoom.us/j/83383743324?pwd=BaHwoInjqRZtBlrA5aY7BejbPnvjhB.1"
+                                    target="_blank">
+                                    <i class="fa-solid fa-volleyball"></i> Фізична культ.
+                                </a>
+                                <span class="pointer copy-badge text-bg-secondary"><i
+                                        class="fa-regular fa-copy"></i></span>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us04web.zoom.us/j/73046673920?pwd=aRtVPjiNGFSMKiuppJ2TecyIfFdFzk.1"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Мистецтво
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us04web.zoom.us/j/78980744792?pwd=hL7bbdfLMANjAJ1ZYeGCAcqZCbqISh.1"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Українська мова та література
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us05web.zoom.us/j/82873210170?pwd=cDhiZGdCSzBjSU80aFc0VHpwbU0zZz09"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Технологія
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us04web.zoom.us/j/79411790504?pwd=1vJkWCKORGIEe5gbMf2aAM5HNOqXr1.1"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Основи здоров'я та добробут
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us04web.zoom.us/j/74030912126?pwd=n6FXDvLEee3qSZbLsttX1ZAJ4ZZOfA.1"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Інформатика 1 Група
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="https://us05web.zoom.us/j/83383743324?pwd=BaHwoInjqRZtBlrA5aY7BejbPnvjhB.1"
-                                        class="h5 d-block text-primary" target="_blank">
-                                        Фізична культура
-                                    </a>
-                                    <span class="pointer badge text-bg-secondary">Copy link</span>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h4 class="">📰 Інформація</h4>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="glass-card info-card">
+                        <div class="info-card-header">
+                            <div class="info-card-icon green"><i class="fa-regular fa-snowflake"></i></div>
+                            <div>
+                                <h4 class="info-card-title">Інформація</h4>
+                                <div class="info-card-subtitle mb-0">Канікули у 2025-2026 н.р.</div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Канікули у 2025-2026 н.р.</h6>
-                            <p class="h5" style="text-decoration: line-through;">🍁 Осінні - 27.10-02.11</p>
-                            <p class="h5" style="text-decoration: line-through;">❄️ Зимові - 29.12-11.01</p>
-                            <p class="h5">🌷 Весняні - 23.03-29.03</p>
-                            <p class="h6">Тривалість навчального року: 01.09-29.05.2026р.</p>
+                        <div class="info-card-body mt-2">
+                            <p style="text-decoration: line-through; color: var(--text-muted);"><i
+                                    class="fa-brands fa-canadian-maple-leaf me-2 text-warning"></i> Осінні: 27.10-02.11
+                            </p>
+                            <hr>
+                            <p style="text-decoration: line-through; color: var(--text-muted);"><i
+                                    class="fa-solid fa-snowflake me-2 text-info"></i> Зимові: 29.12-11.01</p>
+                            <hr>
+                            <p class="fw-bold text-success"><i class="fa-solid fa-seedling me-2 text-success"></i>
+                                Весняні: 23.03-29.03</p>
+                            <hr>
+                            <div class="mt-4 p-3 rounded"
+                                style="background: rgba(79, 172, 254, 0.1); border-left: 4px solid var(--primary-color);">
+                                <h6 class="m-0 fw-bold">Тривалість навчального року:</h6>
+                                <p class="m-0 mt-1">01.09-29.05.2026р.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -780,54 +551,59 @@
         </div>
     </section>
 
+    <!-- News Section -->
     <section class="school-news section-indent">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
+                        <span><span style="color:#FF0000">★</span><span style="color:#FF8C00">★</span><span
+                                style="color:#FFD700">★</span><span style="color:#008000">★</span><span
+                                style="color:#00FFFF">★</span><span style="color:#0000CD">★</span><span
+                                style="color:#4B0082">★</span></span>
                     </div>
                     <h2 class="main-title">Новини класу і школи</h2>
-                    <div class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="sub-title">Найцікавіші події нашого ліцею та нашого 5-А класу.</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-news__item">
-                        <div class="school-news__item-image">
-                            <img src="img/5-7.jpg" alt="">
+
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="glass-card news-card">
+                        <div class="news-image">
+                            <img src="img/5-7.jpg" alt="З Міжнародним днем миру!">
                         </div>
-                        <div class="school-news__item-title">З Міжнародним днем миру!</div>
-                        <div class="school-news__item-text">З Міжнародним днем миру! Сьогодні наймолодші школярі
-                            Одеського ліцею «Гармонія» виготовили паперових голубів із побажаннями миру і спокою для
-                            всіх жителів України і закликали всіх людей: «Живіть у мирі та злагоді! І будьте всі
-                            здорові!» </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-news__item">
-                        <div class="school-news__item-image">
-                            <img src="img/5-3.jpg" alt="">
-                        </div>
-                        <div class="school-news__item-title">Lorem ipsum dolor sit amet</div>
-                        <div class="school-news__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Perferendis autem officia excepturi quisquam labore, nobis totam ut, cupiditate ratione
-                            voluptatibus doloremque numquam dolorum libero nesciunt at reiciendis doloribus? Sint, quis!
+                        <div class="news-content">
+                            <h4 class="news-title">З Міжнародним днем миру!</h4>
+                            <p class="news-text">Сьогодні наймолодші школярі Одеського ліцею «Гармонія» виготовили
+                                паперових голубів із побажаннями миру і спокою для всіх жителів України і закликали всіх
+                                людей: «Живіть у мирі та злагоді! І будьте всі здорові!»</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-news__item">
-                        <div class="school-news__item-image">
-                            <img src="img/5-8.jpg" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="glass-card news-card">
+                        <div class="news-image">
+                            <img src="img/5-3.jpg" alt="Lorem ipsum">
                         </div>
-                        <div class="school-news__item-title">Lorem ipsum dolor sit amet</div>
-                        <div class="school-news__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Perferendis autem officia excepturi quisquam labore, nobis totam ut, cupiditate ratione
-                            voluptatibus doloremque numquam dolorum libero nesciunt at reiciendis doloribus? Sint, quis!
+                        <div class="news-content">
+                            <h4 class="news-title">Екскурсія ліцеєм</h4>
+                            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                                autem officia excepturi quisquam labore, nobis totam ut, cupiditate ratione voluptatibus
+                                doloremque numquam dolorum libero nesciunt at reiciendis doloribus?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="glass-card news-card">
+                        <div class="news-image">
+                            <img src="img/5-8.jpg" alt="Lorem ipsum">
+                        </div>
+                        <div class="news-content">
+                            <h4 class="news-title">Перший дзвоник</h4>
+                            <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                                autem officia excepturi quisquam labore, nobis totam ut, cupiditate ratione voluptatibus
+                                doloremque numquam dolorum libero nesciunt at reiciendis doloribus?</p>
                         </div>
                     </div>
                 </div>
@@ -835,91 +611,73 @@
         </div>
     </section>
 
+    <!-- Photo Gallery -->
     <section class="school-photo section-indent">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
+                        <span><span style="color:#FF0000">★</span><span style="color:#FF8C00">★</span><span
+                                style="color:#FFD700">★</span><span style="color:#008000">★</span><span
+                                style="color:#00FFFF">★</span><span style="color:#0000CD">★</span><span
+                                style="color:#4B0082">★</span></span>
                     </div>
-                    <h2 class="main-title">
-                        Фотографії нашого класу
-                        <!-- <span style="font-size:36px"><span style="color:#FF8C00"><strong><span style="font-family:roboto">____</span></strong></span></span> -->
-                    </h2>
-                    <div class="sub-title">Життя нашого класу в фотографіях</div>
+                    <h2 class="main-title">Фотографії нашого класу</h2>
+                    <div class="sub-title">Життя нашого класу в яскравих моментах і фотографіях.</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-2.jpg" alt="">
-                    </div>
+
+            <div class="photo-gallery mt-2">
+                <div class="photo-item">
+                    <img src="img/5-2.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-3.jpg" alt="">
-                    </div>
+                <div class="photo-item">
+                    <img src="img/5-3.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-4.jpg" alt="">
-                    </div>
+                <div class="photo-item" style="grid-row: span 2; aspect-ratio: auto;">
+                    <img src="img/5-4.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-5.jpg" alt="">
-                    </div>
+                <div class="photo-item">
+                    <img src="img/5-5.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-6.jpg" alt="">
-                    </div>
+                <div class="photo-item">
+                    <img src="img/5-6.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="school-photo__image">
-                        <img src="img/5-3.jpg" alt="">
-                    </div>
+                <div class="photo-item">
+                    <img src="img/5-3.jpg" alt="Фото">
+                    <div class="photo-overlay"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <section class="school-address section-indent">
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="main-stars">
-                        <span style="font-size:28px;"><span style="color:#FF0000">★&nbsp;</span><span
-                                style="color:#FF8C00">★&nbsp;</span><span style="color:#FFD700">★&nbsp;</span><span
-                                style="color:#008000">★&nbsp;</span><span style="color:#00FFFF">★&nbsp;</span><span
-                                style="color:#0000CD">★&nbsp;</span><span style="color:#4B0082">★</span></span>
-                    </div>
-                    <h2 class="main-title">Адреса нашої школи</h2>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Одеський ліцей <br>«Гармонія»</h3>
+                    <p>Сайт 5-А класу</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> Олександра Невського, 43/2а</p>
+                    <p style="font-weight: 300; font-size: 0.95rem; justify-content: flex-end;">Вузівський, Київський,
+                        Одеса, 65088</p>
                 </div>
             </div>
-        </div>
-    </section> -->
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer__body">
-                        <div class="footer__body-school">Одеський лiцей <span>«Гармонiя»</span></div>
-                        <div class="footer__body-text">Сайт 5-А класу Одеського лiцею «Гармонiя»</div>
-                        <div class="footer__body-address">
-                            Олександра Невського, 43/2а
-                            Вузівський, Київський, Одеса, 65088
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Одеський ліцей «Гармонія». Усі права захищені.
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
